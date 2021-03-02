@@ -1,44 +1,93 @@
 <template>
-  <div class="v-row">
-    <img
-      src="../assets/img/working.svg"
-      id="background-img"
-      :style="style.backgroundImg"
-    />
+  <div>
+    <img :src="bgImg" id="background-img" :style="style.backgroundImg" />
+    <div :class="this.class.title" :style="{ color: $vuetify.theme.themes.light.primary }" v-text="title"></div>
+    <v-hover v-slot="{ hover }" v-for="(item, i) in info" :key="i">
+      <v-card class="ma-9 transition-swing" :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '50%' }"
+        :class="`elevation-${hover ? 24 : 6}`">
+        <v-card-title class="text-h5" style="font-weight:bold;">{{item.name}}</v-card-title>
+        <v-divider></v-divider>
+        <v-list>
+          <v-list-item-group>
+            <div v-for="(item, i) in item.content" :key="i">
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title class="text-h6 mb-2" style="font-weight: bold;">{{item.title}}</v-list-item-title>
+                  <span style="text-indent:2em;line-height:150%;" class="text-sublime-1">{{item.subtitle}}</span>
+                  <v-list disabled dense>
+                    <v-list-item-group>
+                      <v-list-item v-for="(item, i) in item.list" :key="i" class="my-n3">
+                        <v-list-item-content>
+                          <span :style="{'line-height': '150%'}" class="text-body-1">
+                            <span :style="{color:$vuetify.theme.themes.light.primary}">{{i+1}}. </span>
+                            {{item}}
+                          </span>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list-item-group>
+                  </v-list>
+                </v-list-item-content>
+              </v-list-item>
+              <v-divider v-if="i != info.length - 1"></v-divider>
+            </div>
+          </v-list-item-group>
+        </v-list>
+      </v-card>
+    </v-hover>
     <dark-button id="dark-button" :style="style.darkButton"></dark-button>
   </div>
 </template>
+
 <script>
-import DarkButton from "../components/dark-button.vue";
-export default {
-  name: "Skills",
-  components: { DarkButton },
-  data: function () {
-    return {
-      style: {
-        darkButton: {
-          top: this.$vuetify.breakpoint.mobile?"70px":"20px",
-          right: this.$vuetify.breakpoint.mobile?"10px":"20px",
+  import DarkButton from "../components/dark-button.vue";
+  import bgImg from "../assets/img/working.svg";
+  export default {
+    name: "Projects",
+    components: { DarkButton },
+    data: function () {
+      return {
+        bgImg: bgImg,
+        title: "项目经验",
+        info:null,
+        style: {
+          darkButton: {
+            top: this.$vuetify.breakpoint.mobile ? "70px" : "20px",
+            right: this.$vuetify.breakpoint.mobile ? "10px" : "20px",
+          },
+          backgroundImg: {
+            width: this.$vuetify.breakpoint.mobile ? "60vw" : "30vw",
+            bottom: this.$vuetify.breakpoint.mobile ? "20vw" : "3vw",
+            right: this.$vuetify.breakpoint.mobile ? "3vw" : "3vw",
+          },
         },
-        backgroundImg: {
-          width: this.$vuetify.breakpoint.mobile?"60vw":"30vw",
-          bottom: this.$vuetify.breakpoint.mobile?"20vw":"3vw",
-          right: this.$vuetify.breakpoint.mobile?"3vw":"3vw",
+        class: {
+          title: {
+            "text-h2": !this.$vuetify.breakpoint.mobile,
+            "text-h3": this.$vuetify.breakpoint.mobile,
+            "ml-3": this.$vuetify.breakpoint.mobile,
+            "ml-9": !this.$vuetify.breakpoint.mobile,
+            "mt-3": this.$vuetify.breakpoint.mobile,
+            "mt-9": !this.$vuetify.breakpoint.mobile,
+          },
         },
-      },
-    };
-  },
-  methods: {},
-  mounted() {},
-};
+      };
+    },
+    methods: {},
+    mounted() {
+      this.axios
+        .get("/test.json")
+        .then((response) => (this.info = response.data.projects));
+    },
+  };
 </script>
 
 <style lang="scss" scoped>
-#background-img {
-  position: fixed;
-}
-#dark-button {
-  position: fixed;
-  z-index: 100;
-}
+  #background-img {
+    position: fixed;
+  }
+
+  #dark-button {
+    position: fixed;
+    z-index: 100;
+  }
 </style>

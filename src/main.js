@@ -8,7 +8,7 @@ import "./styles/index.scss"
 
 //Plugins
 import vuetify from './plugins/vuetify';
-import './plugins/element.js'
+// import './plugins/element.js'
 // import 'bootstrap'
 
 //FontAwesome
