@@ -1,0 +1,139 @@
+{
+    "title": "个人简历",
+    "img":{
+        "avatar":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/avatar.jpg",
+        "info":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/profile.svg",
+        "skills":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/coding.svg",
+        "projects":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/working.svg",
+        "education":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/education.svg",
+        "others":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/ideas.svg"
+    },
+    "info": [
+        {
+            "title": "姓名",
+            "value": "卢山"
+        },
+        {
+            "title": "年龄",
+            "value": "21"
+        },
+        {
+            "title": "性别",
+            "value": "男"
+        },
+        {
+            "title": "学历",
+            "value": "2022届本科毕业生"
+        },
+        {
+            "title": "应聘岗位",
+            "value": "Java 开发(实习)"
+        },
+        {
+            "title": "个人邮箱",
+            "value": "lushan123888@163.com"
+        },
+        {
+            "title": "微信/电话",
+            "value": "17185710240"
+        },
+        {
+            "title": "个人网站",
+            "value": "<a href='http://lushan.tech' target='_blank' style='text-decoration:none;'>http://lushan.tech</a>"
+        }
+    ],
+    "skills": [
+        "熟练掌握 Java 语言，熟悉集合、泛型、IO、多线程、注解与反射、GUI 等基础知识，了解 JVM 相关原理。",
+        "熟悉 Servlet 技术、JSP 技术、SSM 框架以及 SpringBoot 框架，了解 SpringSecurity、Shiro 框架。",
+        "熟悉 Spring 框架，对 IOC、AOP 的思想有一定的理解。",
+        "熟悉常用的设计模式，工厂模式、单例模式、代理模式、享元模式、适配器模式等。",
+        "熟悉 MySQL 数据库，熟练 SQL 语句的编写。了解MySQL索引优化、存储引擎等。",
+        "熟悉 Redis 非关系型数据库以及 RabbitMQ 消息队列的使用。",
+        "熟练掌握 HTML、CSS、JavaScript、熟悉 Ajax、jQuery、Sass、Bootstrap、Webpack 等前端技术。",
+        "熟悉 Vue 框架，熟悉 ElementUI、Vuetify 等前端库。",
+        "熟悉 Tomcat 的基本配置，熟悉 Nginx 的均衡负载、反向代理，动静分离等配置。",
+        "熟悉 Linux 操作系统和 Vim 编辑器，熟悉 Docker、Docker Compose 等容器虚拟化技术,熟悉环境的搭建以及项目的部署。",
+        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验，熟悉 Github、码云等代码管理网站。",
+        "熟练掌握 Markdown、PlantUML，有记录学习笔记的习惯。",
+        "熟练使用 IDEA、VS Code 等IDE开发工具。",
+        "了解 Python、PHP、Shell 的基础语法。",
+        "了解 Hadoop、HDFS、HBase 等分布式技术。"
+    ],
+    "education": [
+        {
+            "title": "所在院校",
+            "value": "华东交通大学"
+        },
+        {
+            "title": "专业",
+            "value": "软件工程"
+        },
+        {
+            "title": "绩点",
+            "value": "3.19"
+        },
+        {
+            "title": "主修课程",
+            "value": "Java、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程、人工智能、大数据技术基础。"
+        },
+        {
+            "title": "荣誉奖项",
+            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>1. </span>华东交通大学第一届5G\"短视频+\"创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>2. </span>华东交通大学&nbsp;ACM&nbsp;程序设计竞赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>3. </span>全国大学生英语等级考试四级证书"
+        }
+    ],
+    "projects": [
+        {
+            "name": "光光爱微信小程序后台管理平台",
+            "content": [
+                {
+                    "title": "项目描述",
+                    "subtitle": "团队协同开发的后台管理平台，类似于 vue-element-admin，是光光爱微信小程序的配套服务，用于向运营和管理人员提供后台管理服务，本人主要负责该项目的后端开发和部署运维，本项目包括如下模块：",
+                    "list": [
+                        "登录模块：提供用户的身份校验、权限分配、密码修改，退出等功能。",
+                        "信息管理模块：提供小程序中实体信息，例如用户信息、商城信息、文章信息、排行榜等的增删改查，提供搜索、排序、图片上传、导出Excel、分页、指定查询条件等功能。",
+                        "权限管理模块：提供不同角色的菜单管理、权限控制。",
+                        "日志模块：通过切面将每次对数据库的增删改做持久化记录，并提供日志的显示、搜索、分页、条件查询、导出Excel等功能。"
+                    ]
+                },
+                {
+                    "title": "技术要点",
+                    "subtitle": "",
+                    "list": [
+                        "后端技术：SpringBoot、MyBatis、Spring Security。",
+                        "前端技术：Vue、ElementUI、Axios。",
+                        "使用 Druid 数据源对数据库进行监控和管理。",
+                        "使用 Swagger 向前端提供接口文档以及简单的测试。",
+                        "使用 Git和 Gitee 作为项目管理，IDEA 作为开发工具，Maven 作为包管理工具。",
+                        "部署环境：MySQL5.7、阿里云服务器（CentOS7）、Nginx。"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "记账吧在线记账网站",
+            "content": [
+                {
+                    "title": "项目描述",
+                    "subtitle": "个人独立开发的在线记账网站，类似于随手记。主要包括如下模块：",
+                    "list": [
+                        "登录注册模块：提供用户登录功能，引导未注册用户完成注册流程，并发送邮件通知。",
+                        "账单记录模块：提供支出与收入账单的记录功能，包括日期、类型、标记、金额、备注等信息。",
+                        "账单查询模块：提供登录用户的在本网站记录的账单数据。",
+                        "用户反馈模块: 向用户提供反馈页面，包含基本信息、评分、留言等，向管理员提供显示所有用户反馈的页面,便于分析统计。"
+                    ]
+                },
+                {
+                    "title": "技术要点",
+                    "subtitle": "",
+                    "list": [
+                        "后端技术：Servlet、JSP、JDBC、MySQL",
+                        "前端技术：HTML、CSS、JavaScript、Ajax",
+                        "使用邮件任务向注册邮箱发送注册信息",
+                        "使用 Git 和 Github 作为项目管理，IDEA 作为开发工具，Maven 作为包管理工具",
+                        "使用Docker Compose 打包项目，配置域名解析，使用 Nginx 反向代理"
+                    ]
+                }
+            ]
+        }
+    ]
+}

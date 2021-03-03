@@ -13,12 +13,12 @@
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title class="text-h6 mb-2" style="font-weight: bold;">{{item.title}}</v-list-item-title>
-                  <span style="text-indent:2em;line-height:150%;" class="text-sublime-1">{{item.subtitle}}</span>
+                  <span style="text-indent:2em;line-height:150%;font-weight: bold;" class="text-sublime-1">{{item.subtitle}}</span>
                   <v-list disabled dense>
                     <v-list-item-group>
                       <v-list-item v-for="(item, i) in item.list" :key="i" class="my-n3">
                         <v-list-item-content>
-                          <span :style="{'line-height': '150%'}" class="text-body-1">
+                          <span :style="{'line-height': '150%','font-weight':'bold'}" class="text-body-1">
                             <span :style="{color:$vuetify.theme.themes.light.primary}">{{i+1}}. </span>
                             {{item}}
                           </span>
