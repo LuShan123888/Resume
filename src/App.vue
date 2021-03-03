@@ -54,7 +54,7 @@
 
 <script>
   //在打包时会被自动加上hash值从而引用图片失败,所以使用import导入
-  import avatar from "./assets/img/Person.jpg";
+  import avatar from "./assets/img/avatar.jpg";
 
   export default {
     name: "App",
