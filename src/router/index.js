@@ -37,7 +37,15 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
+  //切换路由后,滚动条回到顶部
+  scrollBehavior(to,from,saveTop){
+    if(saveTop){
+      return saveTop;
+    }else{
+      return {x:0,y:0}
+    }
+  }
 })
 
 export default router
