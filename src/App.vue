@@ -54,7 +54,6 @@
 
 <script>
   //在打包时会被自动加上hash值从而引用图片失败,所以使用import导入
-  import avatar from "./assets/img/avatar.jpg";
 
   export default {
     name: "App",
@@ -64,7 +63,7 @@
     data: () => ({
       selectedItem: 1,
       title: null,
-      avatar: avatar,
+      avatar: null,
       menus: [
         { text: "个人信息", path: "/", icon: "mdi-home-account" },
         { text: "专业技能", path: "skills", icon: "mdi-lightbulb-on-outline" },
@@ -75,8 +74,11 @@
     }),
     mounted() {
       this.axios
-        .get("/test.json")
-        .then((response) => (this.title = response.data.title));
+        .get(this.GLOBAL.dataSrc)
+        .then((response) => {
+          this.title = response.data.title;
+          this.avatar = response.data.img.avatar;
+        });
     },
   };
 </script>

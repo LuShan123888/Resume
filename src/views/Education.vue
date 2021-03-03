@@ -26,7 +26,6 @@
 
 <script>
   import DarkButton from "../components/dark-button.vue";
-  import bgImg from "../assets/img/education.svg";
   export default {
     name: "Education",
     components: { DarkButton },
@@ -61,8 +60,11 @@
     methods: {},
     mounted() {
       this.axios
-        .get("/test.json")
-        .then((response) => {this.info = response.data.education;this.bgImg=response.data.img.education;});
+        .get(this.GLOBAL.dataSrc)
+        .then((response) => {
+          this.info = response.data.education;
+          this.bgImg = response.data.img.education;
+        });
     },
   };
 </script>

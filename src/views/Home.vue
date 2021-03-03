@@ -26,13 +26,12 @@
 
 <script>
   import DarkButton from "../components/dark-button.vue";
-  import bgImg from "../assets/img/profile.svg";
   export default {
     name: "Home",
     components: { DarkButton },
     data: function () {
       return {
-        bgImg: bgImg,
+        bgImg: null,
         title: "个人信息",
         info: null,
         style: {
@@ -61,8 +60,11 @@
     methods: {},
     mounted() {
       this.axios
-        .get("/test.json")
-        .then((response) => (this.info = response.data.info));
+        .get(this.GLOBAL.dataSrc)
+        .then((response) => {
+          this.info = response.data.info;
+          this.bgImg = response.data.img.info;
+        });
     },
   };
 </script>

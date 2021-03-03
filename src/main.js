@@ -26,6 +26,8 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 
 
+import global_ from './components/Global'
+Vue.prototype.GLOBAL = global_
 Vue.config.productionTip = false;
 
 new Vue({

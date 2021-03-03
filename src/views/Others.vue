@@ -1,10 +1,6 @@
 <template>
-  <div class="v-row">
-    <img
-      src="../assets/img/ideas.svg"
-      id="background-img"
-      :style="style.backgroundImg"
-    />
+  <div>
+    <img :src="bgImg" id="background-img" :style="style.backgroundImg" />
     <dark-button id="dark-button" :style="style.darkButton"></dark-button>
   </div>
 </template>
@@ -16,6 +12,7 @@ export default {
   data: function () {
     return {
       style: {
+        bgImg:null,
         darkButton: {
           top: this.$vuetify.breakpoint.mobile?"70px":"20px",
           right: this.$vuetify.breakpoint.mobile?"10px":"20px",
@@ -29,7 +26,13 @@ export default {
     };
   },
   methods: {},
-  mounted() {},
+  mounted() {
+    this.axios
+        .get(this.GLOBAL.dataSrc)
+        .then((response) => {
+          this.bgImg = response.data.img.others;
+        });
+  },
 };
 </script>
 
