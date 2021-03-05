@@ -8,17 +8,6 @@ import "./styles/index.scss"
 
 //Plugins
 import vuetify from './plugins/vuetify';
-// import './plugins/element.js'
-// import 'bootstrap'
-
-//FontAwesome
-import fontawesome from "@fortawesome/fontawesome";
-import solid from "@fortawesome/fontawesome-free-solid";
-import regular from "@fortawesome/fontawesome-free-regular";
-import brands from "@fortawesome/fontawesome-free-brands";
-fontawesome.library.add(solid);
-fontawesome.library.add(regular);
-fontawesome.library.add(brands);
 
 //Axios
 import axios from 'axios'
