@@ -33,14 +33,22 @@
 </template>
 <script>
 export default {
-  name: "dark-button",
+  name: "DarkButton",
   components: {},
   data: function () {
     return {
       count: 0,
       info: null,
+      scrollTop: 0,
       clickedClass: "button-clicked",
     };
+  },
+  watch: {
+    //如果滚动了页面,则取消按钮的选中状态
+    scrollTop: function () {
+      let btn = document.querySelector(".dark-button");
+      btn.blur();
+    },
   },
   methods: {
     animEnd: function (e) {
@@ -56,8 +64,17 @@ export default {
       const pressed = attr === "true" ? "false" : "true";
       e.target.setAttribute("aria-pressed", pressed);
     },
+    // 保存滚动值，这是兼容的写法
+    handleScroll() {
+      this.scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+    },
   },
-  mounted() {},
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll, true);
+  },
 };
 </script>
 
