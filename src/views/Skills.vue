@@ -21,7 +21,7 @@
                     ><span
                       :style="{ color: $vuetify.theme.themes.light.primary }"
                       >{{ i + 1 }}. </span
-                    >{{ item }}</span
+                    ><span v-html="item"></span></span
                   >
                 </v-list-item-content>
               </v-list-item>

@@ -1,12 +1,12 @@
 {
     "title": "卢山的个人简历",
-    "img":{
-        "avatar":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/avatar.jpg",
-        "info":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/profile.svg",
-        "skills":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/coding.svg",
-        "projects":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/working.svg",
-        "education":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/education.svg",
-        "others":"https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/ideas.svg"
+    "img": {
+        "avatar": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/avatar.jpg",
+        "info": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/profile.svg",
+        "skills": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/coding.svg",
+        "projects": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/working.svg",
+        "education": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/education.svg",
+        "others": "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@main/src/assets/img/ideas.svg"
     },
     "info": [
         {
@@ -34,52 +34,26 @@
             "value": "lushan123888@163.com"
         },
         {
-            "title": "微信/电话",
-            "value": "17185710240"
+            "title": "电话",
+            "value": "15797736533"
         },
         {
             "title": "个人网站",
-            "value": "<a href='http://lushan.tech' target='_blank' style='text-decoration:none;'>http://lushan.tech</a>"
+            "value": "<a href='https://lushan.tech' target='_blank' style='text-decoration:none;'>https://lushan.tech</a>"
         }
     ],
     "skills": [
-        "熟练掌握 Java 语言，熟悉集合、泛型、IO、多线程、注解与反射、GUI 等基础知识，了解 JVM 相关原理。",
-        "熟悉 Servlet 技术、JSP 技术、SSM 框架以及 SpringBoot 框架，了解 SpringSecurity、Shiro 框架。",
+        "熟练掌握 Java 语言，熟悉集合、泛型、IO，多线程等基础知识，了解 JVM 相关原理。",
+        "熟悉 Servlet、JSP、SSM 框架以及 SpringBoot 框架，了解 SpringSecurity、Shiro 框架。",
         "熟悉 Spring 框架，对 IOC、AOP 的思想有一定的理解。",
         "熟悉常用的设计模式，工厂模式、单例模式、代理模式、享元模式、适配器模式等。",
-        "熟悉 MySQL 数据库，熟练 SQL 语句的编写。了解MySQL索引优化、存储引擎等。",
-        "熟悉 Redis 非关系型数据库以及 RabbitMQ 消息队列的使用。",
-        "熟练掌握 HTML、CSS、JavaScript、熟悉 Ajax、jQuery、Sass、Bootstrap、Webpack 等前端技术。",
-        "熟悉 Vue 框架，熟悉 ElementUI、Vuetify 等前端库。",
-        "熟悉 Tomcat 的基本配置，熟悉 Nginx 的均衡负载、反向代理，动静分离等配置。",
+        "熟悉 MySQL ，熟悉 SQL 语句的编写。了解MySQL索引优化、存储引擎等。了解 Redis 的使用。",
+        "熟练掌握 HTML、CSS、JavaScript，熟悉 Ajax、jQuery、Sass、Bootstrap、Webpack 等前端技术，熟悉 Vue 框架，熟悉 ElementUI、Vuetify 等前端库。",
+        "熟悉 Linux，熟悉 Vim 编辑器，熟悉 Docker，熟悉 Nginx 和 Tomcat 的基本配置。",
         "熟悉 Linux 操作系统和 Vim 编辑器，熟悉 Docker、Docker Compose 等容器虚拟化技术,熟悉环境的搭建以及项目的部署。",
-        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验，熟悉 Github、码云等代码管理网站。",
-        "熟练掌握 Markdown、PlantUML，有记录学习笔记的习惯。",
-        "熟练使用 IDEA、VS Code 等IDE开发工具。",
-        "了解 Python、PHP、Shell 的基础语法。",
-        "了解 Hadoop、HDFS、HBase 等分布式技术。"
-    ],
-    "education": [
-        {
-            "title": "所在院校",
-            "value": "华东交通大学"
-        },
-        {
-            "title": "专业",
-            "value": "软件工程"
-        },
-        {
-            "title": "绩点",
-            "value": "3.19"
-        },
-        {
-            "title": "主修课程",
-            "value": "Java、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程、人工智能、大数据技术基础。"
-        },
-        {
-            "title": "荣誉奖项",
-            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>1. </span>华东交通大学第一届5G\"短视频+\"创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>2. </span>华东交通大学&nbsp;ACM&nbsp;程序设计竞赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>3. </span>全国大学生英语等级考试四级证书"
-        }
+        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验，熟悉 Github、码云等代码管理网站。熟练使用 IDEA、VS Code 等IDE开发工具。",
+        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
+        "了解 Python、PHP、Shell 的基础语法。"
     ],
     "projects": [
         {
@@ -134,6 +108,28 @@
                     ]
                 }
             ]
+        }
+    ],
+    "education": [
+        {
+            "title": "所在院校",
+            "value": "华东交通大学"
+        },
+        {
+            "title": "专业",
+            "value": "软件工程"
+        },
+        {
+            "title": "GPA",
+            "value": "3.19"
+        },
+        {
+            "title": "相关课程",
+            "value": "Java、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程"
+        },
+        {
+            "title": "荣誉奖项",
+            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>1. </span>第一届“5G短视频+”创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>2. </span>ACM&nbsp;程序设计竞赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>3. </span>全国大学生英语等级考试四级证书"
         }
     ]
 }
