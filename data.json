@@ -45,7 +45,6 @@
     "skills": [
         "熟练掌握 Java 语言，熟悉集合、泛型、IO，多线程等基础知识，了解 JVM 相关原理。",
         "熟悉 Servlet、JSP、SSM 框架以及 SpringBoot 框架，了解 SpringSecurity、Shiro 框架。",
-        "熟悉 Spring 框架，对 IOC、AOP 的思想有一定的理解。",
         "熟悉常用的设计模式，工厂模式、单例模式、代理模式、享元模式、适配器模式等。",
         "熟悉 MySQL ，熟悉 SQL 语句的编写。了解MySQL索引优化、存储引擎等。了解 Redis 的使用。",
         "熟练掌握 HTML、CSS、JavaScript，熟悉 Ajax、jQuery、Sass、Bootstrap、Webpack 等前端技术，熟悉 Vue 框架，熟悉 ElementUI、Vuetify 等前端库。",
@@ -125,7 +124,7 @@
         },
         {
             "title": "相关课程",
-            "value": "Java、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程"
+            "value": "Java语言程序设计、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程"
         },
         {
             "title": "荣誉奖项",
