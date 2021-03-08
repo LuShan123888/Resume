@@ -19,8 +19,10 @@
                 <v-list-item-content>
                   <span
                     :style="{ 'font-weight': 'bold', 'line-height': '150%' }"
-                    >{{ item.title }}：<span v-html="item.value"></span
-                  ></span>
+                  >
+                    {{ item.title }}：
+                    <span v-html="item.value"></span>
+                  </span>
                 </v-list-item-content>
               </v-list-item>
               <v-divider v-if="i != info.length - 1"></v-divider>

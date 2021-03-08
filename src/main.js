@@ -15,8 +15,11 @@ import VueAxios from 'vue-axios'
 Vue.use(VueAxios, axios)
 
 
+//Global variation
 import global_ from './components/Global'
 Vue.prototype.GLOBAL = global_
+
+//Vue config
 Vue.config.productionTip = false;
 
 new Vue({
