@@ -27,7 +27,7 @@
         },
         {
             "title": "应聘岗位",
-            "value": "Java 开发(实习)"
+            "value": "Java 后端开发(实习)"
         },
         {
             "title": "个人邮箱",
@@ -43,41 +43,38 @@
         }
     ],
     "skills": [
-        "熟练掌握 Java 语言，熟悉集合、泛型、IO，多线程等基础知识，了解 JVM 相关原理。",
-        "熟悉 Servlet、JSP、SSM 框架以及 SpringBoot 框架，了解 SpringSecurity、Shiro 框架。",
-        "熟悉常用的设计模式，工厂模式、单例模式、代理模式、享元模式、适配器模式等。",
-        "熟悉 MySQL ，熟悉 SQL 语句的编写。了解MySQL索引优化、存储引擎等。了解 Redis 的使用。",
-        "熟练掌握 HTML、CSS、JavaScript，熟悉 Ajax、jQuery、Sass、Bootstrap、Webpack 等前端技术，熟悉 Vue 框架，熟悉 ElementUI、Vuetify 等前端库。",
-        "熟悉 Linux，熟悉 Vim 编辑器，熟悉 Docker，熟悉 Nginx 和 Tomcat 的基本配置。",
-        "熟悉 Linux 操作系统和 Vim 编辑器，熟悉 Docker、Docker Compose 等容器虚拟化技术,熟悉环境的搭建以及项目的部署。",
-        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验，熟悉 Github、码云等代码管理网站。熟练使用 IDEA、VS Code 等IDE开发工具。",
-        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
+        "Java 基础扎实，熟悉IO、集合等基础知识，对 JVM 原理有一定的了解。",
+        "熟悉 Servlet、JSP、SSM 框架以及 Spring Boot 框架，了解 Spring Security、Shiro 框架。",
+        "熟悉常用的设计模式，包括单例模式、工厂模式、代理模式等。",
+        "熟悉 MySQL ，SQL 语句的编写。了解MySQL 索引优化、存储引擎等。了解 Redis 的使用。",
+        "HTML、CSS、JavaScript 基础扎实，熟悉 Vue、jQuery、Sass、Bootstrap、Webpack 等前端技术。",
+        "熟悉 Linux，Vim，Docker 的使用，熟悉 Nginx 和 Tomcat 的配置。",
+        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验。",
+        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于个人网站中。",
         "了解 Python、PHP、Shell 的基础语法。"
     ],
     "projects": [
         {
-            "name": "光光爱微信小程序后台管理系统",
+            "name": "光光爱微信小程序后台管理系统（Spring Boot）",
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "团队协同开发的后台管理平台，类似于 vue-element-admin，是光光爱微信小程序的配套服务，用于向运营和管理人员提供后台管理服务，本人主要负责该项目的后端开发和部署运维，本项目包括如下模块：",
+                    "subtitle": "团队协同开发的后台管理平台，是\"光光爱\"微信小程序的配套服务，用于向运营和管理人员提供后台管理服务。",
                     "list": [
                         "登录模块：提供用户的身份校验、权限分配、密码修改，退出等功能。",
                         "信息管理模块：提供小程序中实体信息，例如用户信息、商城信息、文章信息、排行榜等的增删改查，提供搜索、排序、图片上传、导出Excel、分页、指定查询条件等功能。",
                         "权限管理模块：提供不同角色的菜单管理、权限控制。",
-                        "日志模块：通过切面将每次对数据库的增删改做持久化记录，并提供日志的显示、搜索、分页、条件查询、导出Excel等功能。"
+                        "日志模块：将每次对数据库的增删改做持久化记录。"
                     ]
                 },
                 {
                     "title": "技术要点",
                     "subtitle": "",
                     "list": [
-                        "后端技术：SpringBoot、MyBatis、Spring Security。",
-                        "前端技术：Vue、ElementUI、Axios。",
+                        "使用 Spring AOP 和反射实现日志模块。",
+                        "使用 Spring Security 实现登录模块。",
                         "使用 Druid 数据源对数据库进行监控和管理。",
-                        "使用 Swagger 向前端提供接口文档以及简单的测试。",
-                        "使用 Git和 Gitee 作为项目管理，IDEA 作为开发工具，Maven 作为包管理工具。",
-                        "部署环境：MySQL5.7、阿里云服务器（CentOS7）、Nginx。"
+                        "使用 Swagger 向前端提供接口文档以及简单的测试。"
                     ]
                 }
             ]
@@ -87,7 +84,7 @@
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "个人独立开发的在线记账网站，类似于随手记。主要包括如下模块：",
+                    "subtitle": "      本人完成了本项目前端、后端开发以及部署上线，本项目主要包括以下模块：",
                     "list": [
                         "登录注册模块：提供用户登录功能，引导未注册用户完成注册流程，并发送邮件通知。",
                         "账单记录模块：提供支出与收入账单的记录功能，包括日期、类型、标记、金额、备注等信息。",
@@ -99,11 +96,9 @@
                     "title": "技术要点",
                     "subtitle": "",
                     "list": [
-                        "后端技术：Servlet、JSP、JDBC、MySQL",
-                        "前端技术：HTML、CSS、JavaScript、Ajax",
-                        "使用邮件任务向注册邮箱发送注册信息",
-                        "使用 Git 和 Github 作为项目管理，IDEA 作为开发工具，Maven 作为包管理工具",
-                        "使用Docker Compose 打包项目，配置域名解析，使用 Nginx 反向代理"
+                        "使用 Ajax 实现页面的动态更新。",
+                        "使用 Java 多线程实现邮件任务的异步处理。",
+                        "使用 Docker Compose 打包项目，配置域名解析，使用 Nginx 反向代理 Tomcat，部署于云服务器。"
                     ]
                 }
             ]
@@ -115,11 +110,15 @@
             "value": "华东交通大学"
         },
         {
-            "title": "专业",
+            "title": "主修专业",
             "value": "软件工程"
         },
         {
-            "title": "GPA",
+            "title": "在读时间",
+            "value": "2018年 09 月 - 2022年06月"
+        },
+        {
+            "title": "绩点",
             "value": "3.19"
         },
         {
@@ -127,8 +126,8 @@
             "value": "Java语言程序设计、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程"
         },
         {
-            "title": "荣誉奖项",
-            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>1. </span>第一届“5G短视频+”创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>2. </span>ACM&nbsp;程序设计竞赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style='color:#1976D2'>3. </span>全国大学生英语等级考试四级证书"
+            "title": "英语水平",
+            "value": " CET4"
         }
     ]
 }
