@@ -9,7 +9,7 @@
     <v-hover v-slot="{ hover }">
       <v-card
         class="ma-9 transition-swing"
-        :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '50%' }"
+        :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '60%' }"
         :class="`elevation-${hover ? 24 : 6}`"
       >
         <v-list>
@@ -45,7 +45,7 @@ export default {
       info: null,
       style: {
         backgroundImg: {
-          width: this.$vuetify.breakpoint.mobile ? "60vw" : "30vw",
+          width: this.$vuetify.breakpoint.mobile ? "60vw" : "20vw",
           bottom: this.$vuetify.breakpoint.mobile ? "20vw" : "3vw",
           right: this.$vuetify.breakpoint.mobile ? "3vw" : "3vw",
         },
