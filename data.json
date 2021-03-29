@@ -50,7 +50,7 @@
         "HTML、CSS、JavaScript 基础扎实，熟悉 Vue、jQuery、Sass、Bootstrap、Webpack 等前端技术。",
         "熟悉 Linux，Vim，Docker 的使用，熟悉 Nginx 和 Tomcat 的配置。",
         "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验。",
-        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于个人网站中。",
+        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
         "了解 Python、PHP、Shell 的基础语法。"
     ],
     "projects": [
