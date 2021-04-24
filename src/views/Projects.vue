@@ -9,13 +9,15 @@
     <v-hover v-slot="{ hover }" v-for="(item, i) in info" :key="i">
       <v-card
         class="ma-9 transition-swing"
-        :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '60%'}"
+        :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '60%' }"
         :class="`elevation-${hover ? 24 : 6}`"
       >
-        <v-card-title class="text-h5" style="font-weight: bold">{{
-          item.name
-        }}</v-card-title>
-        <v-divider></v-divider>
+        <v-card-title
+          class="text-h5"
+          style="font-weight: bold"
+          v-html="item.name"
+        />
+        <v-divider />
         <v-list>
           <v-list-item-group>
             <div v-for="(item, i) in item.content" :key="i">
@@ -24,8 +26,8 @@
                   <v-list-item-title
                     class="text-h6 mb-2"
                     style="font-weight: bold"
-                    >{{ item.title }}</v-list-item-title
-                  >
+                    v-html="item.title"
+                  />
                   <span
                     style="
                       text-indent: 2em;
@@ -33,8 +35,8 @@
                       font-weight: bold;
                     "
                     class="text-sublime-1"
-                    >{{ item.subtitle }}</span
-                  >
+                    v-html="item.subtitle"
+                  />
                   <v-list disabled dense>
                     <v-list-item-group>
                       <v-list-item
@@ -54,9 +56,9 @@
                               :style="{
                                 color: $vuetify.theme.themes.light.primary,
                               }"
-                              >{{ i + 1 }}.
-                            </span>
-                            {{ item }}
+                              v-html="i + 1 + '. '"
+                            />
+                            <span v-html="item" />
                           </span>
                         </v-list-item-content>
                       </v-list-item>

@@ -20,7 +20,7 @@
                   <span
                     :style="{ 'font-weight': 'bold', 'line-height': '150%' }"
                   >
-                    {{ item.title }}：
+                    <span v-html="item.title + '：'"></span>
                     <span v-html="item.value"></span>
                   </span>
                 </v-list-item-content>

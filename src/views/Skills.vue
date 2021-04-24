@@ -17,12 +17,13 @@
             <div v-for="(item, i) in info" :key="i">
               <v-list-item>
                 <v-list-item-content>
-                  <span style="font-weight: bold; line-height: 150%"
-                    ><span
+                  <span style="font-weight: bold; line-height: 150%">
+                    <span
                       :style="{ color: $vuetify.theme.themes.light.primary }"
-                      >{{ i + 1 }}. </span
-                    ><span v-html="item"></span></span
-                  >
+                      v-html="i + 1 + '. '"
+                    />
+                    <span v-html="item" />
+                  </span>
                 </v-list-item-content>
               </v-list-item>
               <v-divider v-if="i != info.length - 1"></v-divider>
