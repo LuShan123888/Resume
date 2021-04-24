@@ -101,10 +101,10 @@ export default {
       avatar: null,
       menus: [
         { text: "个人信息", path: "/", icon: "mdi-home-account" },
+        { text: "教育经历", path: "education", icon: "mdi-book" },
         { text: "专业技能", path: "skills", icon: "mdi-lightbulb-on-outline" },
         { text: "项目经验", path: "projects", icon: "mdi-flag" },
-        { text: "教育经历", path: "education", icon: "mdi-book" },
-        // { text: "其他", path: "others", icon: "mdi-message-processing" },
+        { text: "自我评价", path: "others", icon: "mdi-message-processing" },
       ],
       style: {
         darkButton: {
