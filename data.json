@@ -34,24 +34,16 @@
             "value": "lushan123888@163.com"
         },
         {
-            "title": "电话",
-            "value": "15797736533"
-        },
-        {
             "title": "个人网站",
             "value": "<a href='https://lushan.tech' target='_blank' style='text-decoration:none;'>https://lushan.tech</a>"
         }
     ],
     "skills": [
-        "Java 基础扎实，熟悉IO、集合等基础知识，对 JVM 原理有一定的了解。",
-        "熟悉 Servlet、JSP、SSM 框架以及 Spring Boot 框架，了解 Spring Security、Shiro 框架。",
-        "熟悉常用的设计模式，包括单例模式、工厂模式、代理模式等。",
-        "熟悉 MySQL ，SQL 语句的编写。了解MySQL 索引优化、存储引擎等。了解 Redis 的使用。",
-        "HTML、CSS、JavaScript 基础扎实，熟悉 Vue、jQuery、Sass、Bootstrap、Webpack 等前端技术。",
-        "熟悉 Linux，Vim，Docker 的使用，熟悉 Nginx 和 Tomcat 的配置。",
-        "熟练掌握 Git、Maven、Swagger 的使用，有多人协同开发的经验。",
-        "熟练掌握 Markdown、PlantUML，定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
-        "了解 Python、PHP、Shell 的基础语法。"
+        "后端：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
+        "框架：熟悉 MyBatis，Spring Boot 框架的使用，了解 Spring Security 框架。",
+        "数据库：熟悉 SQL 语句的编写。了解 MySQL 索引优化、存储引擎等。了解 Redis。",
+        "前端：熟悉 HTML、CSS、JavaScript，会使用 Vue、jQuery、Bootstrap 等前端框架。",
+        "部署：熟悉 Docker，Linux，Vim的使用，了解 Nginx 的配置。"
     ],
     "projects": [
         {
@@ -59,22 +51,17 @@
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "团队协同开发的后台管理平台，是\"光光爱\"微信小程序的配套服务，用于向运营和管理人员提供后台管理服务。",
-                    "list": [
-                        "登录模块：提供用户的身份校验、权限分配、密码修改，退出等功能。",
-                        "信息管理模块：提供小程序中实体信息，例如用户信息、商城信息、文章信息、排行榜等的增删改查，提供搜索、排序、图片上传、导出Excel、分页、指定查询条件等功能。",
-                        "权限管理模块：提供不同角色的菜单管理、权限控制。",
-                        "日志模块：将每次对数据库的增删改做持久化记录。"
-                    ]
+                    "subtitle": "华东交通大学创新创业中心核心项目，“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的公益项目。本项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。",
+                    "list": []
                 },
                 {
-                    "title": "技术要点",
+                    "title": "职责描述",
                     "subtitle": "",
                     "list": [
-                        "使用 Spring AOP 和反射实现日志模块。",
-                        "使用 Spring Security 实现登录模块。",
-                        "使用 Druid 数据源对数据库进行监控和管理。",
-                        "使用 Swagger 向前端提供接口文档以及简单的测试。"
+                        "负责“光光爱“微信小程序的<a href='https://gms.guangguangai.com' target='_blank' style='text-decoration:none;'>后台管理系统</a>的开发任务，用于向团队中的运营和管理人员提供后台管理服务。",
+                        "整合 Spring Security，完善了认证鉴权功能。",
+                        "通过 Spring AOP 添加日志模块，便于监控和管理。",
+                        "租用阿里云服务器，配置域名解析，成功部署上线。"
                     ]
                 }
             ]
@@ -84,21 +71,16 @@
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "本人完成了本项目前端、后端开发以及部署上线，本项目主要包括以下模块：",
-                    "list": [
-                        "登录注册模块：提供用户登录功能，引导未注册用户完成注册流程，并发送邮件通知。",
-                        "账单记录模块：提供支出与收入账单的记录功能，包括日期、类型、标记、金额、备注等信息。",
-                        "账单查询模块：提供登录用户的在本网站记录的账单数据。",
-                        "用户反馈模块: 向用户提供反馈页面，包含基本信息、评分、留言等，向管理员提供显示所有用户反馈的页面,便于分析统计。"
-                    ]
+                    "subtitle": "个人独立开发的<a href='https://github.com/LuShan123888/Tally' target='_blank' style='text-decoration:none;'>在线记账网站</a>。",
+                    "list": []
                 },
                 {
-                    "title": "技术要点",
+                    "title": "职责描述",
                     "subtitle": "",
                     "list": [
-                        "使用 Ajax 实现页面的动态更新。",
-                        "使用 Java 多线程实现邮件任务的异步处理。",
-                        "使用 Docker Compose 打包项目，配置域名解析，使用 Nginx 反向代理 Tomcat，部署于云服务器。"
+                        "个人完成了整个网站的数据库设计，前端和后端的开发工作。",
+                        "通过多线程实现了邮件异步发送。",
+                        "使用 Docker 构建和部署该项目至个人云服务器。"
                     ]
                 }
             ]
@@ -128,6 +110,15 @@
         {
             "title": "英语水平",
             "value": " CET4"
+        },
+        {
+            "title": "荣誉奖项",
+            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 第一届5G“短视频+“创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 华东交通大学ACM“双基”程序设计竞赛三等奖"
         }
+    ],
+        "others": [
+            "编程爱好者，自学能力强，喜欢研究一些新技术，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
+            "对前端和后端技术都有了解，并且善于将技术理论实践于项目中。<a href='https://github.com/LuShan123888' target='_blank' style='text-decoration:none;'>个人Github</a>。",
+            "拥有团队协同开发的经历，具有良好的表达与沟通能力，积极主动，对工作尽心尽责。"
     ]
 }
