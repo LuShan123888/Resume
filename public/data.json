@@ -39,7 +39,7 @@
         }
     ],
     "skills": [
-        "后端：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
+        "Java：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
         "框架：熟悉 MyBatis，Spring Boot 框架的使用，了解 Spring Security 框架。",
         "数据库：熟悉 SQL 语句的编写。了解 MySQL 索引优化、存储引擎等。了解 Redis。",
         "前端：熟悉 HTML、CSS、JavaScript，会使用 Vue、jQuery、Bootstrap 等前端框架。",
