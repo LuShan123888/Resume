@@ -39,7 +39,7 @@
         }
     ],
     "skills": [
-        "后端：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
+        "Java：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
         "框架：熟悉 MyBatis，Spring Boot 框架的使用，了解 Spring Security 框架。",
         "数据库：熟悉 SQL 语句的编写。了解 MySQL 索引优化、存储引擎等。了解 Redis。",
         "前端：熟悉 HTML、CSS、JavaScript，会使用 Vue、jQuery、Bootstrap 等前端框架。",
@@ -47,7 +47,7 @@
     ],
     "projects": [
         {
-            "name": "光光爱微信小程序后台管理系统（Spring Boot）",
+            "name": "“光光爱“微信小程序后台管理系统（Spring Boot）",
             "content": [
                 {
                     "title": "项目描述",
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "name": "记账吧在线记账网站（JSP）",
+            "name": "“记账吧“在线记账网站（JSP）",
             "content": [
                 {
                     "title": "项目描述",
