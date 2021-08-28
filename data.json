@@ -27,7 +27,7 @@
         },
         {
             "title": "应聘岗位",
-            "value": "Java 后端开发（实习）"
+            "value": "Java 开发工程师"
         },
         {
             "title": "个人邮箱",
@@ -39,49 +39,43 @@
         }
     ],
     "skills": [
-        "Java：熟悉 Java 基础，集合，多线程等，对 JVM 原理有一定的了解。",
-        "框架：熟悉 MyBatis，Spring Boot 框架的使用，了解 Spring Security 框架。",
-        "数据库：熟悉 SQL 语句的编写。了解 MySQL 索引优化、存储引擎等。了解 Redis。",
-        "前端：熟悉 HTML、CSS、JavaScript，会使用 Vue、jQuery、Bootstrap 等前端框架。",
-        "部署：熟悉 Docker，Linux，Vim的使用，了解 Nginx 的配置。"
+        "熟悉 Java 基础知识，对多线程，JVM 有一定的了解。",
+        "熟悉 MySQL 索引、事务等。了解 Redis，Kafka 等中间件。",
+        "熟悉 MyBatis，Spring Boot，Spring Security 框架的使用和基本原理。",
+        "熟悉 HTML、CSS、JavaScript 基本语法，有 Vue 框架的使用经验。",
+        "了解 Linux 基本命令，会使用 Docker 打包和部署项目。"
     ],
     "projects": [
         {
-            "name": "“光光爱“微信小程序后台管理系统（Spring Boot）",
+            "name": "京东（北京）- 软件开发工程师",
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "华东交通大学创新创业中心核心项目，“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的公益项目。本项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。",
+                    "subtitle": "本人参与了 JWMS 项目的研发任务。该项目是以京东自研物流管理软件为核心，结合京东自营仓储物流管理经验，为企业提供的全方位电商物流仓储解决方案。功能模块包括企业管理，基础数据，入库业务，出库业务，在库业务，异常中心，报表管理等。",
                     "list": []
                 },
                 {
-                    "title": "职责描述",
+                    "title": "主要工作内容",
                     "subtitle": "",
                     "list": [
-                        "负责“光光爱“微信小程序的<a href='https://gms.guangguangai.com' target='_blank' style='text-decoration:none;'>后台管理系统</a>的开发任务，用于向团队中的运营和管理人员提供后台管理服务。",
-                        "整合 Spring Security，完善了认证鉴权功能。",
-                        "通过 Spring AOP 添加日志模块，便于监控和管理。",
-                        "租用阿里云服务器，配置域名解析，成功部署上线。"
+                        "管理端查询接口优化：管理端的所有查询接口需要根据权限过滤出属于该用户的对应查询记录。由于需要修改的接口较多，所以使用AOP与反射的方式将权限列表注入到查询对象中，然后在Mybatis拦截器中将查询条件拼接到待执行的SQL语句中，最终避免了大量的代码修改，也预留了注解提供给后续的开发任务。",
+                        "盘点模块对接下游系统：盘点模块添加将盘点任务下发至自动设备的功能，并且接收自动设备回传的盘点结果。在开发中使用策略模式提高可扩展性，使用对外接口平台将接口的调用与业务解耦。最终实现了通过自动设备执行盘点任务，并为后续接入其他类型的自动设备预留接口。"
                     ]
                 }
             ]
         },
         {
-            "name": "“记账吧“在线记账网站（JSP）",
+            "name": "“光光爱“微信小程序后台管理系统（Spring Boot）",
             "content": [
                 {
                     "title": "项目描述",
-                    "subtitle": "个人独立开发的<a href='https://github.com/LuShan123888/Tally' target='_blank' style='text-decoration:none;'>在线记账网站</a>。",
+                    "subtitle": "“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的公益项目。该项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。+，入驻商家10+。",
                     "list": []
                 },
                 {
                     "title": "职责描述",
-                    "subtitle": "",
-                    "list": [
-                        "个人完成了整个网站的数据库设计，前端和后端的开发工作。",
-                        "通过多线程实现了邮件异步发送。",
-                        "使用 Docker 构建和部署该项目至个人云服务器。"
-                    ]
+                    "subtitle": "本人负责“光光爱“微信小程序的后台管理系统的开发任务，该系统用于向团队中的运营等人员提供后台管理服务。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要的工作成果：完成用户信息，商家信息的研发，整合 Spring Security 框架并完成权限管理模块，以及使用 AOP 与反射新增了风险操作记录模块。",
+                    "list": []
                 }
             ]
         }
@@ -113,12 +107,12 @@
         },
         {
             "title": "荣誉奖项",
-            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 第一届5G“短视频+“创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 华东交通大学ACM“双基”程序设计竞赛三等奖"
+            "value": "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 计算机软件著作权登记证书。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 第一届5G“短视频+“创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. 华东交通大学ACM“双基”程序设计竞赛三等奖"
         }
     ],
-        "others": [
-            "编程爱好者，自学能力强，喜欢研究一些新技术，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tk' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
-            "对前端和后端技术都有了解，并且善于将技术理论实践于项目中。<a href='https://github.com/LuShan123888' target='_blank' style='text-decoration:none;'>个人Github</a>。",
-            "拥有团队协同开发的经历，具有良好的表达与沟通能力，积极主动，对工作尽心尽责。"
+    "others": [
+        "一名编程爱好者，自学能力强，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tk' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
+        "对技术保持兴趣和热爱，并且善于将技术理论实践于项目中。<a href='https://github.com/LuShan123888' target='_blank' style='text-decoration:none;'>个人Github</a>。",
+        "拥有大型互联网公司的实习经历，具有良好的表达与沟通能力，积极主动，对工作尽心尽责。"
     ]
 }
