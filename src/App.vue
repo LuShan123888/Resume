@@ -15,7 +15,6 @@
 import DarkButton from "./views/components/DarkButton";
 import AppBar from "./views/components/AppBar";
 import Navbar from "./views/components/Navbar";
-//在打包时会被自动加上hash值从而引用图片失败,所以使用import导入
 
 export default {
   name: "App",
