@@ -1,0 +1,32 @@
+<template>
+  <v-app-bar app collapse-on-scroll :value="$vuetify.breakpoint.mobile">
+    <v-app-bar-nav-icon class="ml-3" elevation="2">
+      <v-avatar size="48">
+        <img :src="avatar" alt="avatar" style="border: 2px solid #dee2e6" />
+      </v-avatar>
+    </v-app-bar-nav-icon>
+    <v-app-bar-title
+      :style="{ color: $vuetify.theme.dark ? '#c0c0c0' : '#666666' }"
+      class="text-h6"
+      v-text="title"
+    >
+    </v-app-bar-title>
+  </v-app-bar>
+</template>
+<script>
+export default {
+  name: "AppBar",
+  data: function () {
+    return {
+      title: null,
+      avatar: null,
+    };
+  },
+  mounted() {
+    this.axios.get(this.GLOBAL.dataSrc).then((response) => {
+      this.title = response.data.title;
+      this.avatar = response.data.img.avatar;
+    });
+  },
+};
+</script>

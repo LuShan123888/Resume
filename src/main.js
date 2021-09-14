@@ -16,7 +16,7 @@ Vue.use(VueAxios, axios)
 
 
 //Global variation
-import global_ from './components/Global'
+import global_ from './common/Global'
 Vue.prototype.GLOBAL = global_
 
 //Vue config
