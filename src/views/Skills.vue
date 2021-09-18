@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Skills",
   components: {},
   data: function () {
     return {

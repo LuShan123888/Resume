@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: "Others",
   components: {},
   data: function () {
     return {
