@@ -23,10 +23,8 @@ export default {
     };
   },
   mounted() {
-    this.axios.get(this.GLOBAL.dataSrc).then((response) => {
-      this.title = response.data.title;
-      this.avatar = response.data.img.avatar;
-    });
+    this.title = this.GLOBAL.title;
+    this.avatar = this.GLOBAL.img.avatar;
   },
 };
 </script>

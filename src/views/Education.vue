@@ -37,6 +37,14 @@
 export default {
   name: "Education",
   components: {},
+  computed: {
+    isMobile: function () {
+      return this.$vuetify.breakpoint.mobile;
+    },
+    isDark: function () {
+      return this.$vuetify.theme.dark;
+    },
+  },
   data: function () {
     return {
       bgImg: null,
@@ -44,29 +52,27 @@ export default {
       info: null,
       style: {
         backgroundImg: {
-          width: this.$vuetify.breakpoint.mobile ? "60vw" : "20vw",
-          bottom: this.$vuetify.breakpoint.mobile ? "20vw" : "3vw",
-          right: this.$vuetify.breakpoint.mobile ? "3vw" : "3vw",
+          width: this.isMobile ? "60vw" : "20vw",
+          bottom: this.isMobile ? "20vw" : "3vw",
+          right: this.isMobile ? "3vw" : "3vw",
         },
       },
       class: {
         title: {
-          "text-h2": !this.$vuetify.breakpoint.mobile,
-          "text-h3": this.$vuetify.breakpoint.mobile,
-          "ml-3": this.$vuetify.breakpoint.mobile,
-          "ml-9": !this.$vuetify.breakpoint.mobile,
-          "mt-3": this.$vuetify.breakpoint.mobile,
-          "mt-9": !this.$vuetify.breakpoint.mobile,
+          "text-h2": !this.isMobile,
+          "text-h3": this.isMobile,
+          "ml-3": this.isMobile,
+          "ml-9": !this.isMobile,
+          "mt-3": this.isMobile,
+          "mt-9": !this.isMobile,
         },
       },
     };
   },
   methods: {},
   mounted() {
-    this.axios.get(this.GLOBAL.dataSrc).then((response) => {
-      this.info = response.data.education;
-      this.bgImg = response.data.img.education;
-    });
+    this.info = this.GLOBAL.education;
+    this.bgImg = this.GLOBAL.img.education;
   },
 };
 </script>
