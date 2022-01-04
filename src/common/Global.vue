@@ -3,8 +3,7 @@ const title = "卢山的个人简历";
 const img = {
   avatar:
     "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/avatar.jpg",
-  info:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/profile.svg",
+  info: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/profile.svg",
   skills:
     "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/coding.svg",
   projects:
@@ -33,7 +32,7 @@ const info = [
   },
   {
     title: "应聘岗位",
-    value: "Java 开发工程师",
+    value: "后端开发工程师",
   },
   {
     title: "个人邮箱",
@@ -54,20 +53,21 @@ const skills = [
 ];
 const projects = [
   {
-    name: "京东（北京）- 软件开发工程师",
+    name: "京东（北京）- 后端开发工程师",
     content: [
       {
         title: "项目描述",
         subtitle:
-          "本人参与了 JWMS 项目的研发任务。该项目是以京东自研物流管理软件为核心，结合京东自营仓储物流管理经验，为企业提供的全方位电商物流仓储解决方案。功能模块包括企业管理，基础数据，入库业务，出库业务，在库业务，异常中心，报表管理等。",
+          "本人参与了 JWMS 项目的研发任务。该项目是以京东自研物流管理软件为核心，结合京东自营仓储物流管理经验，为企业提供的全方位电商物流仓储解决方案。该项目由包括运营端，管理端和操作端，其中操作端模块包括基础数据，入库业务，出库业务，在库业务，异常中心，报表管理等。"
+          +"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JWMS 基于 SSM 框架，使用 JSF 实现微服务架构，数据层为 MySQL 集群，整合 JMQ，JIMDB 等自研中间件，以及使用 JDOS 实现项目的部署和监控。",
         list: [],
       },
       {
         title: "主要工作内容",
         subtitle: "",
         list: [
-          "管理端查询接口优化：管理端的所有查询接口需要根据权限过滤出属于该用户的对应查询记录。由于需要修改的接口较多，所以使用AOP与反射的方式将权限列表注入到查询对象中，然后在Mybatis拦截器中将查询条件拼接到待执行的SQL语句中，最终避免了大量的代码修改，也预留了注解提供给后续的开发任务。",
-          "盘点模块对接下游系统：盘点模块添加将盘点任务下发至自动设备的功能，并且接收自动设备回传的盘点结果。在开发中使用策略模式提高可扩展性，使用对外接口平台将接口的调用与业务解耦。最终实现了通过自动设备执行盘点任务，并为后续接入其他类型的自动设备预留接口。",
+          "管理端数据隔离：管理员通过管理端各模块的查询接口可以获取不属于其管辖仓库的相关配置数据，所以需要根据管理员的操作权限实现基于仓库级别的数据隔离。我通过 Redis，Spring AOP 以及 MyBatis 拦截器实现该需求，也自定义注解以简化后续的开发任务。",
+          "订单预组波处理：为提高拣货效率，需要将订单合并处理，所以需要对大量订单根据指定的筛选条件和分组维度进行汇总。我通过 SQL 语句和集合运算，查询和过滤订单信息，使用 Stream 流汇总并生成树状结构。最终实现预组波功能，提高组波的效率。"
         ],
       },
     ],
@@ -78,13 +78,13 @@ const projects = [
       {
         title: "项目描述",
         subtitle:
-          "“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的公益项目。该项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。+，入驻商家10+。",
+          "“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的微信小程序。该项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。",
         list: [],
       },
       {
         title: "职责描述",
         subtitle:
-          "本人负责“光光爱“微信小程序的后台管理系统的开发任务，该系统用于向团队中的运营等人员提供后台管理服务。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主要的工作成果：完成用户信息，商家信息的研发，整合 Spring Security 框架并完成权限管理模块，以及使用 AOP 与反射新增了风险操作记录模块。",
+          "本人负责“光光爱“微信小程序的后台管理系统的开发任务，主要的工作成果包括整合 Spring Security 框架实现用户登录与鉴权功能，建立 RBAC 模型完成权限管理模块，以及使用 Spring AOP 与反射新增了风险操作记录模块。",
         list: [],
       },
     ],
@@ -123,9 +123,8 @@ const education = [
   },
 ];
 const others = [
-  "一名编程爱好者，自学能力强，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tk' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
-  "对技术保持兴趣和热爱，并且善于将技术理论实践于项目中。<a href='https://github.com/LuShan123888' target='_blank' style='text-decoration:none;'>个人Github</a>。",
   "拥有大型互联网公司的实习经历，具有良好的表达与沟通能力，积极主动，对工作尽心尽责。",
+  "一名编程爱好者，自学能力强，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tk' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
 ];
 
 export default {
@@ -135,6 +134,6 @@ export default {
   skills,
   projects,
   education,
-  others
+  others,
 };
 </script>
