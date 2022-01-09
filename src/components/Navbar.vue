@@ -45,13 +45,7 @@
         </div>
       </div>
     </v-navigation-drawer>
-    <v-bottom-navigation
-      color="primary"
-      fixed
-      app
-      grow
-      v-show="$vuetify.breakpoint.mobile"
-    >
+    <v-bottom-navigation color="primary" fixed app grow v-show="isMobile">
       <v-btn
         v-for="(item, i) in menus"
         :key="i"
@@ -68,6 +62,14 @@
 <script>
 export default {
   name: "Navbar",
+  computed: {
+    isMobile: function () {
+      return this.$vuetify.breakpoint.mobile;
+    },
+    isDark: function () {
+      return this.$vuetify.theme.dark;
+    },
+  },
   data: function () {
     return {
       selectedItem: 1,

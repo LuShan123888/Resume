@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <dark-button id="dark-button" :style="style.darkButton" />
-    <app-bar />
+    <app-bar :style="{ 'z-index': '101' }"/>
     <navbar />
     <v-main>
       <v-container fluid>
@@ -31,8 +31,8 @@ export default {
     return {
       style: {
         darkButton: {
-          top: this.isMobile ? "70px" : "20px",
-          right: this.isMobile ? "10px" : "20px",
+          top: this.$vuetify.breakpoint.mobile ? "10px" : "10px",
+          right: this.$vuetify.breakpoint.mobile ? "10px" : "10px",
         },
       },
     };

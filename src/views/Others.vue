@@ -2,14 +2,14 @@
   <div>
     <img :src="bgImg" id="background-img" :style="style.backgroundImg" />
     <div
-      :class="this.class.title"
+      :class="classes.title"
       :style="{ color: $vuetify.theme.themes.light.primary }"
       v-text="title"
     />
     <v-hover v-slot="{ hover }">
       <v-card
         class="ma-9 transition-swing"
-        :style="{ width: $vuetify.breakpoint.mobile ? '80%' : '60%' }"
+        :style="{ width: isMobile ? '80%' : '60%' }"
         :class="`elevation-${hover ? 24 : 6}`"
       >
         <v-list>
@@ -54,19 +54,19 @@ export default {
       info: null,
       style: {
         backgroundImg: {
-          width: this.isMobile ? "60vw" : "20vw",
-          bottom: this.isMobile ? "20vw" : "3vw",
-          right: this.isMobile ? "3vw" : "3vw",
+          width: this.$vuetify.breakpoint.mobile ? "60vw" : "20vw",
+          bottom: this.$vuetify.breakpoint.mobile ? "20vw" : "3vw",
+          right: this.$vuetify.breakpoint.mobile ? "3vw" : "3vw",
         },
       },
-      class: {
+      classes: {
         title: {
-          "text-h2": !this.isMobile,
-          "text-h3": this.isMobile,
-          "ml-3": this.isMobile,
-          "ml-9": !this.isMobile,
-          "mt-3": this.isMobile,
-          "mt-9": !this.isMobile,
+          "text-h2": !this.$vuetify.breakpoint.mobile,
+          "text-h3": this.$vuetify.breakpoint.mobile,
+          "ml-3": this.$vuetify.breakpoint.mobile,
+          "ml-9": !this.$vuetify.breakpoint.mobile,
+          "mt-3": this.$vuetify.breakpoint.mobile,
+          "mt-9": !this.$vuetify.breakpoint.mobile,
         },
       },
     };
