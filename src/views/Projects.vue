@@ -1,64 +1,64 @@
 <template>
   <div>
-    <img :src="bgImg" id="background-img" :style="style.backgroundImg" />
+    <img :src="bgImg" id="background-img" :style="style.backgroundImg"/>
     <div
-      :class="classes.title"
-      :style="{ color: $vuetify.theme.themes.light.primary }"
-      v-text="title"
+        :class="classes.title"
+        :style="{ color: $vuetify.theme.themes.light.primary }"
+        v-text="title"
     ></div>
     <v-hover v-slot="{ hover }" v-for="(item, i) in info" :key="i">
       <v-card
-        class="ma-9 transition-swing"
-        :style="{ width: isMobile ? '80%' : '60%' }"
-        :class="`elevation-${hover ? 24 : 6}`"
+          class="ma-9 transition-swing"
+          :style="{ width: isMobile ? '80%' : '60%' }"
+          :class="`elevation-${hover ? 24 : 6}`"
       >
         <v-card-title
-          class="text-h5"
-          style="font-weight: bold"
-          v-html="item.name"
+            class="text-h5"
+            style="font-weight: bold"
+            v-html="item.name"
         />
-        <v-divider />
+        <v-divider/>
         <v-list>
           <v-list-item-group>
             <div v-for="(item, i) in item.content" :key="i">
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title
-                    class="text-h6 mb-2"
-                    style="font-weight: bold"
-                    v-html="item.title"
+                      class="text-h6 mb-2"
+                      style="font-weight: bold"
+                      v-html="item.title"
                   />
                   <span
-                    style="
+                      style="
                       text-indent: 2em;
                       line-height: 150%;
                       font-weight: bold;
                     "
-                    class="text-sublime-1"
-                    v-html="item.subtitle"
+                      class="text-sublime-1"
+                      v-html="item.subtitle"
                   />
                   <v-list disabled dense>
                     <v-list-item-group>
                       <v-list-item
-                        v-for="(item, i) in item.list"
-                        :key="i"
-                        class="my-n3"
+                          v-for="(item, i) in item.list"
+                          :key="i"
+                          class="my-n3"
                       >
                         <v-list-item-content>
                           <span
-                            :style="{
+                              :style="{
                               'line-height': '150%',
                               'font-weight': 'bold',
                             }"
-                            class="text-body-1"
+                              class="text-body-1"
                           >
                             <span
-                              :style="{
+                                :style="{
                                 color: $vuetify.theme.themes.light.primary,
                               }"
-                              v-html="i + 1 + '. '"
+                                v-html="i + 1 + '. '"
                             />
-                            <span v-html="item" />
+                            <span v-html="item"/>
                           </span>
                         </v-list-item-content>
                       </v-list-item>

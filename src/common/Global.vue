@@ -2,16 +2,16 @@
 const title = "卢山的个人简历";
 const img = {
   avatar:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/avatar.jpg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/avatar.jpg",
   info: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/profile.svg",
   skills:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/coding.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/coding.svg",
   projects:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/working.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/working.svg",
   education:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/education.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/education.svg",
   others:
-    "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/ideas.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/ideas.svg",
 };
 const info = [
   {
@@ -41,7 +41,7 @@ const info = [
   {
     title: "个人网站",
     value:
-      "<a href='https://lushan.tk' target='_blank' style='text-decoration:none;'>https://lushan.tk</a>",
+        "<a href='https://lushan.tk' target='_blank' style='text-decoration:none;'>https://lushan.tk</a>",
   },
 ];
 const skills = [
@@ -58,8 +58,8 @@ const projects = [
       {
         title: "项目描述",
         subtitle:
-          "本人参与了 JWMS 项目的研发任务。该项目是以京东自研物流管理软件为核心，结合京东自营仓储物流管理经验，为企业提供的全方位电商物流仓储解决方案。该项目由包括运营端，管理端和操作端，其中操作端模块包括基础数据，入库业务，出库业务，在库业务，异常中心，报表管理等。"
-          +"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JWMS 基于 SSM 框架，使用 JSF 实现微服务架构，数据层为 MySQL 集群，整合 JMQ，JIMDB 等自研中间件，以及使用 JDOS 实现项目的部署和监控。",
+            "本人参与了 JWMS 项目的研发任务。该项目是以京东自研物流管理软件为核心，结合京东自营仓储物流管理经验，为企业提供的全方位电商物流仓储解决方案。该项目由包括运营端，管理端和操作端，其中操作端模块包括基础数据，入库业务，出库业务，在库业务，异常中心，报表管理等。"
+            + "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JWMS 基于 SSM 框架，使用 JSF 实现微服务架构，数据层为 MySQL 集群，整合 JMQ，JIMDB 等自研中间件，以及使用 JDOS 实现项目的部署和监控。",
         list: [],
       },
       {
@@ -78,13 +78,13 @@ const projects = [
       {
         title: "项目描述",
         subtitle:
-          "“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的微信小程序。该项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。",
+            "“光光爱”是利用互联网平台优势解决用餐浪费和小额捐赠的微信小程序。该项目包含光盘打卡，公益宣传，排行榜，爱心捐赠，商城兑换等功能。于2020年9月上线，现有团队成员30余人，用户1000+，入驻商家10+。",
         list: [],
       },
       {
         title: "职责描述",
         subtitle:
-          "本人负责“光光爱“微信小程序的后台管理系统的开发任务，主要的工作成果包括整合 Spring Security 框架实现用户登录与鉴权功能，建立 RBAC 模型完成权限管理模块，以及使用 Spring AOP 与反射新增了风险操作记录模块。",
+            "本人负责“光光爱“微信小程序的后台管理系统的开发任务，主要的工作成果包括整合 Spring Security 框架实现用户登录与鉴权功能，建立 RBAC 模型完成权限管理模块，以及使用 Spring AOP 与反射新增了风险操作记录模块。",
         list: [],
       },
     ],
@@ -110,7 +110,7 @@ const education = [
   {
     title: "相关课程",
     value:
-      "Java语言程序设计、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程",
+        "Java语言程序设计、离散数学、数据库原理、数据结构、算法设计与分析、计算机网络、操作系统、编译原理、软件工程",
   },
   {
     title: "英语水平",
@@ -119,7 +119,7 @@ const education = [
   {
     title: "荣誉奖项",
     value:
-      "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 计算机软件著作权登记证书。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 第一届5G“短视频+“创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. 华东交通大学ACM“双基”程序设计竞赛三等奖",
+        "<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 计算机软件著作权登记证书。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. 第一届5G“短视频+“创新创业大赛三等奖<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. 华东交通大学ACM“双基”程序设计竞赛三等奖",
   },
 ];
 const others = [

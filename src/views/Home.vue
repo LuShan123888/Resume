@@ -1,16 +1,16 @@
 <template>
   <div>
-    <img :src="bgImg" id="background-img" :style="style.backgroundImg" />
+    <img :src="bgImg" id="background-img" :style="style.backgroundImg"/>
     <div
-      :class="classes.title"
-      :style="{ color: $vuetify.theme.themes.light.primary }"
-      v-text="title"
+        :class="classes.title"
+        :style="{ color: $vuetify.theme.themes.light.primary }"
+        v-text="title"
     ></div>
     <v-hover v-slot="{ hover }">
       <v-card
-        class="ma-9 transition-swing"
-        :style="{ width: isMobile ? '80%' : '60%' }"
-        :class="`elevation-${hover ? 24 : 6}`"
+          class="ma-9 transition-swing"
+          :style="{ width: isMobile ? '80%' : '60%' }"
+          :class="`elevation-${hover ? 24 : 6}`"
       >
         <v-list>
           <v-list-item-group>
@@ -18,7 +18,7 @@
               <v-list-item>
                 <v-list-item-content>
                   <span
-                    :style="{ 'font-weight': 'bold', 'line-height': '150%' }"
+                      :style="{ 'font-weight': 'bold', 'line-height': '150%' }"
                   >
                     <span v-html="item.title + '：'"></span>
                     <span v-html="item.value"></span>

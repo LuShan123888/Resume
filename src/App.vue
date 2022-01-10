@@ -1,8 +1,8 @@
 <template>
   <v-app>
-    <dark-button id="dark-button" :style="style.darkButton" />
+    <dark-button id="dark-button" :style="style.darkButton"/>
     <app-bar :style="{ 'z-index': '101' }"/>
-    <navbar />
+    <navbar/>
     <v-main>
       <v-container fluid>
         <router-view></router-view>
@@ -18,7 +18,7 @@ import Navbar from "./components/Navbar";
 
 export default {
   name: "App",
-  components: { DarkButton, Navbar, AppBar },
+  components: {DarkButton, Navbar, AppBar},
   computed: {
     isMobile: function () {
       return this.$vuetify.breakpoint.mobile;
