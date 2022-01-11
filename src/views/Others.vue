@@ -74,7 +74,7 @@ export default {
   methods: {},
   mounted() {
     this.info = this.GLOBAL.others;
-    this.bgImg = this.GLOBAL.img.others;
+    this.bgImg = this.GLOBAL.images.ideas;
   },
 };
 </script>

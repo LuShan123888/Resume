@@ -74,7 +74,7 @@ export default {
   methods: {},
   mounted() {
     this.info = this.GLOBAL.skills;
-    this.bgImg = this.GLOBAL.img.skills;
+    this.bgImg = this.GLOBAL.images.coding;
   },
 };
 </script>

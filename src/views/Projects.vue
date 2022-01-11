@@ -114,7 +114,7 @@ export default {
   methods: {},
   mounted() {
     this.info = this.GLOBAL.projects;
-    this.bgImg = this.GLOBAL.img.projects;
+    this.bgImg = this.GLOBAL.images.working;
   },
 };
 </script>

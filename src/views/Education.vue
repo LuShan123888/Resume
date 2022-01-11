@@ -72,7 +72,7 @@ export default {
   methods: {},
   mounted() {
     this.info = this.GLOBAL.education;
-    this.bgImg = this.GLOBAL.img.education;
+    this.bgImg = this.GLOBAL.images.education;
   },
 };
 </script>

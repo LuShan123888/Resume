@@ -86,7 +86,7 @@ export default {
   },
   mounted() {
     this.title = this.GLOBAL.title;
-    this.avatar = this.GLOBAL.img.avatar;
+    this.avatar = this.GLOBAL.images.avatar;
   },
 };
 </script>

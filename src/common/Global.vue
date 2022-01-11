@@ -1,17 +1,17 @@
 <script>
 const title = "卢山的个人简历";
-const img = {
+const images = {
   avatar:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/avatar.jpg",
-  info: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/profile.svg",
-  skills:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/coding.svg",
-  projects:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/working.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/avatar.jpg",
+  profile: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/profile.svg",
+  coding:
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/coding.svg",
+  working:
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/working.svg",
   education:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/education.svg",
-  others:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/img/ideas.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/education.svg",
+  ideas:
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/ideas.svg",
 };
 const info = [
   {
@@ -124,12 +124,12 @@ const education = [
 ];
 const others = [
   "拥有大型互联网公司的实习经历，具有良好的表达与沟通能力，积极主动，对工作尽心尽责。",
-  "一名编程爱好者，自学能力强，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tk' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
+  "一名编程爱好者，自学能力强，会定期记录学习笔记并发布于<a href='https://softwaremagic.lushan.tech' target='_blank' style='text-decoration:none;'>个人网站</a>中。",
 ];
 
 export default {
   title,
-  img,
+  images,
   info,
   skills,
   projects,

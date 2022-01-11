@@ -73,7 +73,7 @@ export default {
   methods: {},
   mounted() {
     this.info = this.GLOBAL.info;
-    this.bgImg = this.GLOBAL.img.info;
+    this.bgImg = this.GLOBAL.images.profile;
   },
 };
 </script>
