@@ -2,16 +2,16 @@
 const title = "卢山的个人简历";
 const images = {
   avatar:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/avatar.jpg",
-  profile: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/profile.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/avatar.jpg",
+  profile: "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/profile.svg",
   coding:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/coding.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/coding.svg",
   working:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/working.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/working.svg",
   education:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/education.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/education.svg",
   ideas:
-      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages/assets/images/ideas.svg",
+      "https://cdn.jsdelivr.net/gh/LuShan123888/Resume@gh-pages//static/images/ideas.svg",
 };
 const info = [
   {
