@@ -45,17 +45,11 @@
                           class="my-n3"
                       >
                         <v-list-item-content>
-                          <span
-                              :style="{
-                              'line-height': '150%',
-                              'font-weight': 'bold',
-                            }"
-                              class="text-body-1"
+                          <span class="text-body-1"
+                              :style="{lineHeight: ',150%',fontWeight: 'bold'}"
                           >
                             <span
-                                :style="{
-                                color: $vuetify.theme.themes.light.primary,
-                              }"
+                                :style="{color: $vuetify.theme.themes.light.primary}"
                                 v-html="i + 1 + '. '"
                             />
                             <span v-html="item"/>
