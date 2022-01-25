@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import DarkButton from "./components/DarkButton";
-import AppBar from "./components/AppBar";
-import Navbar from "./components/Navbar";
+import DarkButton from "@/components/DarkButton";
+import AppBar from "@/components/AppBar";
+import Navbar from "@/components/Navbar";
 
 export default {
   name: "App",

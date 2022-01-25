@@ -66,7 +66,7 @@
                   </v-list>
                 </v-list-item-content>
               </v-list-item>
-              <v-divider v-if="i != info.length - 1"></v-divider>
+              <v-divider v-if="i !== info.length - 1"></v-divider>
             </div>
           </v-list-item-group>
         </v-list>

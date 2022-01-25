@@ -1,17 +1,17 @@
 // Vue
 import Vue from 'vue'
-import App from './App'
-import router from './router'
-import store from './store'
+import App from '@/App'
+import router from '@/router'
+import store from '@/store'
 // Style
-import "./style.scss"
+import "@/style.scss"
 // Plugins
-import vuetify from './plugins/vuetify';
+import vuetify from '@/plugins/vuetify';
 // Axios
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 // Utils
-import global_ from './common/Global'
+import global_ from '@/common/Global'
 
 Vue.use(VueAxios, axios)
 Vue.prototype.GLOBAL = global_

@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../pages/Home/Home'
-import Skills from '../pages/Skills/Skills'
-import Projects from '../pages/Projects/Projects'
-import Education from '../pages/Education/Education'
-import Others from '../pages/Others/Others'
+import Home from '@/pages/Home'
+import Skills from '@/pages/Skills'
+import Projects from '@/pages/Projects'
+import Education from '@/pages/Education'
+import Others from '@/pages/Others'
 
 Vue.use(VueRouter)
 

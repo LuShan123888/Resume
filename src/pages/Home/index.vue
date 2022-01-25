@@ -5,7 +5,7 @@
         :class="classes.title"
         :style="{ color: $vuetify.theme.themes.light.primary }"
         v-text="title"
-    />
+    ></div>
     <v-hover v-slot="{ hover }">
       <v-card
           class="ma-9 transition-swing"
@@ -17,16 +17,13 @@
             <div v-for="(item, i) in info" :key="i">
               <v-list-item>
                 <v-list-item-content>
-                  <span style="font-weight: bold; line-height: 150%">
-                    <span
-                        :style="{ color: $vuetify.theme.themes.light.primary }"
-                        v-html="i + 1 + '. '"
-                    />
-                    <span v-html="item"/>
+                  <span :style="{ 'font-weight': 'bold', 'line-height': '150%' }">
+                    <span v-html="item.title + '：'"></span>
+                    <span v-html="item.value"></span>
                   </span>
                 </v-list-item-content>
               </v-list-item>
-              <v-divider v-if="i != info.length - 1"></v-divider>
+              <v-divider v-if="i !== info.length - 1"></v-divider>
             </div>
           </v-list-item-group>
         </v-list>
@@ -37,7 +34,7 @@
 
 <script>
 export default {
-  name: "Others",
+  name: "Home",
   components: {},
   computed: {
     isMobile: function () {
@@ -50,7 +47,7 @@ export default {
   data: function () {
     return {
       bgImg: null,
-      title: "自我评价",
+      title: "个人信息",
       info: null,
       style: {
         backgroundImg: {
@@ -73,8 +70,8 @@ export default {
   },
   methods: {},
   mounted() {
-    this.info = this.GLOBAL.others;
-    this.bgImg = this.GLOBAL.images.ideas;
+    this.info = this.GLOBAL.info;
+    this.bgImg = this.GLOBAL.images.profile;
   },
 };
 </script>

@@ -17,16 +17,14 @@
             <div v-for="(item, i) in info" :key="i">
               <v-list-item>
                 <v-list-item-content>
-                  <span style="font-weight: bold; line-height: 150%">
-                    <span
-                        :style="{ color: $vuetify.theme.themes.light.primary }"
-                        v-html="i + 1 + '. '"
-                    />
-                    <span v-html="item"/>
-                  </span>
+                  <span
+                      :style="{ 'font-weight': 'bold', 'line-height': '150%' }"
+                  ><span v-html="item.title + '：'"></span>
+                    <span v-html="item.value"></span
+                    ></span>
                 </v-list-item-content>
               </v-list-item>
-              <v-divider v-if="i != info.length - 1"></v-divider>
+              <v-divider v-if="i !== info.length - 1"></v-divider>
             </div>
           </v-list-item-group>
         </v-list>
@@ -37,7 +35,7 @@
 
 <script>
 export default {
-  name: "Skills",
+  name: "Education",
   components: {},
   computed: {
     isMobile: function () {
@@ -50,7 +48,7 @@ export default {
   data: function () {
     return {
       bgImg: null,
-      title: "专业技能",
+      title: "教育经历",
       info: null,
       style: {
         backgroundImg: {
@@ -73,8 +71,8 @@ export default {
   },
   methods: {},
   mounted() {
-    this.info = this.GLOBAL.skills;
-    this.bgImg = this.GLOBAL.images.coding;
+    this.info = this.GLOBAL.education;
+    this.bgImg = this.GLOBAL.images.education;
   },
 };
 </script>
