@@ -41,7 +41,7 @@ const info = [
   {
     title: "个人网站",
     value:
-        "<a href='https://lushan.tk' target='_blank' style='text-decoration:none;'>https://lushan.tk</a>",
+        "<a href='https://lushan.tech' target='_blank' style='text-decoration:none;'>https://lushan.tech</a>",
   },
 ];
 const skills = [
